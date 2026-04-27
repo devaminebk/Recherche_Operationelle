@@ -1,0 +1,27 @@
+# --- Python Bytecode & Cache ---
+__pycache__/
+*.py[cod]
+*$py.class
+
+# --- Virtual Environments ---
+.venv/
+venv/
+env/
+ENV/
+
+# --- Jupyter Notebooks ---
+.ipynb_checkpoints
+
+# --- Optimization / Data ---
+*.log
+*.sol
+*.lp
+*.mps
+.DS_Store
+
+# --- IDEs ---
+.vscode/
+.idea/
+
+# --- Environment Variables ---
+.env
