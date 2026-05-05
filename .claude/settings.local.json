@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(Get-ChildItem -Path \"C:\\\\RO_TP\" -Force)",
+      "Bash(Select-Object -Property Name, PSIsContainer)",
+      "Bash(Format-Table)",
+      "PowerShell(Get-ChildItem -Path \"C:\\\\RO_TP\" -Force | Format-Table -Property Name, @{Name=\"Type\"; Expression={if \\($_.PSIsContainer\\) {\"Dir\"} else {\"File\"}}} -AutoSize)",
+      "PowerShell(Get-ChildItem -Path \"C:\\\\RO_TP\" -Force | Where-Object {$_.Name -match '\\\\.\\(json|yaml|yml|toml|cfg|conf|txt|md\\)$'} | Select-Object -Property Name)"
+    ]
+  }
+}
