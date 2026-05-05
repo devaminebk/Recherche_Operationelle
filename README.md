@@ -2,6 +2,8 @@
 
 Visualisation interactive des Travaux Pratiques de Recherche Opérationnelle utilisant Python, Streamlit, PuLP et Plotly.
 
+## link : https://rechercheoperationelle-aminebk.streamlit.app/
+
 ## Description
 
 Cette application Streamlit permet de résoudre et visualiser interactivement les problèmes de programmation linéaire et de transport issus des TPs de Recherche Opérationnelle.
@@ -79,10 +81,5 @@ Après avoir lancé l'application, naviguez dans la sidebar pour accéder aux di
 - Les résultats optimaux
 - Des graphiques interactifs
 
-## Contributeurs
 
-Développé pour les cours de Recherche Opérationnelle.
 
-## Licence
-
-MIT
