@@ -145,9 +145,9 @@ def solve_tp2_coussinets():
 # ──────────────────────────────────────────────
 def solve_tp3_carco():
     prob = LpProblem("CARCO", LpMaximize)
-    v  = LpVariable("Voitures",  lowBound=0)
-    c  = LpVariable("Camions",   lowBound=0)
-    m1 = LpVariable("Machines1", lowBound=0)
+    v  = LpVariable("Voitures",  lowBound=0, cat='Integer')
+    c  = LpVariable("Camions",   lowBound=0, cat='Integer')
+    m1 = LpVariable("Machines1", lowBound=0, cat='Integer')
 
     # Profit = 300v + 400c - 50*m1 (location coût)
     prob += 300 * v + 400 * c - 50 * m1, "Profit"
